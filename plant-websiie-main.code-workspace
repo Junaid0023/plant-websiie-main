@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "plant-websiie-main",
+			"path": "."
+		},
+		{
+			"name": "dynamic form",
+			"path": "C:/Users/ISHAQ JUNAID/Desktop/personal files/website projects/guessing game/dynamic form"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "plant-websiie-main"
+	}
+}

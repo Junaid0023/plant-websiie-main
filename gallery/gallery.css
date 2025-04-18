@@ -1,0 +1,45 @@
+.main-page{
+    overflow: hidden;
+    padding: 9% 0;
+   
+}
+
+.cards-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+}
+
+.card{
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 20px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    border: 2px solid var(--color-secondary);
+   
+}
+
+.title{
+    text-align: center;
+    color: var(--color-contrast);
+    margin: 10px auto;
+}
+
+.img-container{
+    width: 100%;
+    /* background-color: red; */
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card .info{
+    text-align: center;
+}

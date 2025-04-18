@@ -1,0 +1,17 @@
+.construction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+.construction-imgContaine{
+    width: 60%;
+    height: 60%;
+}
+
+img{
+   width: 700px;
+}
