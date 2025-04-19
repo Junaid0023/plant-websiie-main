@@ -61,7 +61,8 @@
     z-index: 10;
     margin-left: 100px;
     transform: translateY(-50%);
-    width: 50%;
+    width: 100%;
+
 
 }
 
@@ -78,11 +79,13 @@
 
 .hero-content p{
     margin-top: 10px;
+    font-size: 1.4rem;
 }
 
 
 
 .cta{
+    width: 50%;
     margin-top: 70px;
     display: flex;
     gap: 20px;
@@ -137,9 +140,7 @@
     color: var(--color-contrast);
 }
 
- h2, p{
-   color: var(--color-contrast);
-}
+
 .news-letter-content{
     display: flex;
     align-items: center;
@@ -182,11 +183,29 @@
 @media(width < 898px){
 
     .hero{
-        width: 100%;
+       
+        align-items: center;
+        justify-content: center;
     }
     .hero-desc{
+        margin: 0;
+        position: relative;
         width: 100%;
-        /* background-color: red; */
+        text-align: center;
+    }
+
+ 
+
+    .cta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+
+    .cta button{
+        font-size: 1.4rem;
     }
 
     .input-container input{
