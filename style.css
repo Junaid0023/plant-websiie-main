@@ -327,10 +327,10 @@ nav{
 
 
 footer{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     padding: 30px;
     width: 100%;
     background-color: var(--color-primary);
@@ -344,7 +344,6 @@ footer{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
-  place-items: center;
 
 }
 
@@ -478,6 +477,12 @@ footer .quick-links a{
         display: flex;
         flex-direction: column;
     } */
+
+    .footer-section{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
 
 
  
