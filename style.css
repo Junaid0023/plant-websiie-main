@@ -71,8 +71,8 @@ nav{
     box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
     /* display: none; */
     border-bottom: 5px solid var(--color-primary);
+    color: var(--color-text);
     
-
 }
 
 .nav-container{
@@ -153,22 +153,18 @@ nav{
     display: flex;
     margin-left: 50px;
     color: var(--color-text);
+    background-color: red;
 }
 
 
 
 
 .open-menu{
-    color: var(--color--white);
+  
     font-size: 1.7rem;
     display: flex;
 }
 
-
-
-.close-menu{
-    display: none;
-}
 
 .search-container{
     display: flex;
@@ -490,7 +486,7 @@ footer .quick-links a{
 
 @media(width < 1082px){
     .search-container{
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 }
 
