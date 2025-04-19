@@ -88,8 +88,8 @@
     gap: 20px;
 }
 .cta button{
-    width: 180px;
-    padding: 13px 0;
+    /* width: 180px; */
+    padding: 13px 30px;
     border-radius: 9px;
     font-size: .9rem;
     color: var(--color--white);
@@ -160,7 +160,7 @@
 
 .input-container input{
     padding: 12px 10px;
-    border: 2px solid var(--color-contrast);
+    border: 1px solid var(--color-primary);
     /* width: 400px; */
     min-width: 300px;
     max-width: 100%;
@@ -169,12 +169,21 @@
 .subscribe-btn{
     font-size: 1rem;
     padding: 12px 17px;
-    background-color: var(--color-contrast);
+    background-color: var(--color-text);
     color: var(--color--white);
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
 }
 
 
 
 @media(width < 898px){
-    
+
+    .hero{
+        width: 100%;
+    }
+    .hero-desc{
+        width: 100%;
+        /* background-color: red; */
+    }
 }
