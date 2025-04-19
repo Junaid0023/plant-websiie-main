@@ -104,9 +104,16 @@
 }
 
 @media(width < 898px){
+    .intro h1{
+        font-size: .9rem;
+    }
+
+    .filter-container{
+        padding: 20px;
+    }
     .filterBtnContainer{
         gap: 5px;
-        padding: 2px;
+        padding: 0;
         
     }
 
@@ -116,5 +123,16 @@
 
     .discount-text{
         font-size: .9rem;
+        display: none;
+    }
+
+    .cards-content{
+        .cards-content{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            
+        }
+        
     }
 }

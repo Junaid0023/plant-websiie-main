@@ -178,6 +178,15 @@
     border-bottom-right-radius: 19px;
 }
 
+@media(width < 1146px){
+
+    .container{
+        width: var(--container-w-md);
+    }
+    .hero-content h1{
+        font-size: 4rem;
+    }
+}
 
 
 @media(width < 898px){
@@ -195,6 +204,16 @@
         position: relative;
         width: 100%;
         text-align: center;
+       
+    }
+
+    .hero-content h1{
+        font-size: 3rem;
+        
+    }
+
+    .hero-content p{
+        font-size: 1rem;
     }
 
  
@@ -209,7 +228,7 @@
     }
 
     .cta button{
-        font-size: 1rem;
+        font-size: .8rem;
         flex: 1;
     }
 

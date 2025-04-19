@@ -150,12 +150,12 @@ nav{
 }
 
 .menu-buttons{
-    display: flex;
+    /* display: flex;
     margin-left: 50px;
     color: var(--color-text);
     display: none;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 
@@ -164,7 +164,7 @@ nav{
 .open-menu{
     display: flex;
     font-size: 1.7rem;
-    display: flex;
+    display: none;
 }
 
 
@@ -260,8 +260,8 @@ nav{
     min-width: 300px;
     width: 320px;
     font-size: 16px;
-    top: 85px;
-    right: 40px;
+    top: 70px;
+    right: 10px;
     display: flex;
     transform-origin: top right ;
     pointer-events: none;
@@ -499,31 +499,37 @@ footer .quick-links a{
     }
 
     .logo{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
     }
 
 
    .nav-links{
     position: fixed;
-    right: 0;
+    left: 0;
     top: 70px;
     display: none;
     flex-direction: column;
-    background-color: var(--color-primary);
+    background-color: var(--color--white);
     padding: 30px;
-    width: 60%;
+    width: 80%;
     height: 40%;
-    animation: slidein .3s ease-in;
-    transform: translateX(-100%)
+    border-right: 3px solid var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+   
    }
 
 
    .nav-links li a{
-    font-size: 1.2rem;
+    font-size: 1rem;
    }
 
    .menu-buttons{
-    display: flex;
+    /* display: flex; */
     /* background-color: red; */
    }
 
