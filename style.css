@@ -420,7 +420,8 @@ footer .quick-links a{
 
 @media(width < 700px){
     nav{
-        /* position: fixed; */
+        /* position: fixed;
+        top: 0; */
         position: relative;
     }
     .logo{
@@ -508,10 +509,13 @@ footer .quick-links a{
 
 
    .nav-links{
-    position: fixed;
-    left: 0;
-    top: 70px;
-    display: none;
+    position: absolute;
+    right: 0;
+    /* top: 200px; */
+
+
+
+    /* display: none;
     flex-direction: column;
     background-color: var(--color--white);
     padding: 30px;
@@ -519,7 +523,7 @@ footer .quick-links a{
     height: 40%;
     border-right: 3px solid var(--color-primary);
     border-bottom: 3px solid var(--color-primary);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); */
    
    }
 
