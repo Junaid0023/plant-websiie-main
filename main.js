@@ -2,12 +2,14 @@
 
 const openMenu = document.querySelector('.open-menu')
 const navLinks = document.querySelector('.nav-links')
-const closeMenu = document.querySelector('.close-menu');
+
 
 
 
 openMenu.addEventListener('click', ()=>{
-    navLinks.classList.toggle('active')
+    const Isactive = navLinks.classList.toggle('active')
+    openMenu.classList.toggle('fa-bars', !Isactive)
+    openMenu.classList.toggle('fa-times', Isactive)
 
 })
 
