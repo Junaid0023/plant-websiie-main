@@ -332,6 +332,7 @@ footer{
     padding: 30px;
     width: 100%;
     background-color: var(--color-primary);
+    margin-top: 2rem;
  
 
 
@@ -435,7 +436,7 @@ footer .quick-links a{
         display: flex;
         position: absolute;
         right: 0;
-        top: 90px;
+        top: 100px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -471,6 +472,20 @@ footer .quick-links a{
         
     }
 
+    .user,
+    .user,
+    .user-profile
+    {
+        font-size: 1rem;
+    }
+
+  
+
+    .order-count{
+        background-color: green;
+        padding: 1px;
+    }
+
 
     /* .cta{
         display: flex;
@@ -495,12 +510,13 @@ footer .quick-links a{
 
 @media(width < 898px){
     nav{
-        height: 70px;
-        position: relative;
+        position: fixed;
+        /* height: 60px;
+        position: relative; */
     }
 
     .logo{
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -515,7 +531,8 @@ footer .quick-links a{
 
 
 
-    /* display: none;
+
+    display: none;
     flex-direction: column;
     background-color: var(--color--white);
     padding: 30px;
@@ -523,7 +540,7 @@ footer .quick-links a{
     height: 40%;
     border-right: 3px solid var(--color-primary);
     border-bottom: 3px solid var(--color-primary);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
    
    }
 

@@ -48,18 +48,10 @@
 .filter-btn{
     padding: 12px 24px;
     cursor: pointer;
-    background-color: var(--color-secondary);
-    color: var(--color--white);
-    /* border: 2px solid var(--color-secondary); */
-    transition: all .4s ease-in-out;
-}
-
-.filter-btn:hover{
-    background-color: var(--color--lightcontrast-);
-    color: var(--color-secondary);
    
-
 }
+
+
 
 
 .card{
@@ -137,12 +129,26 @@
         display: none;
     }
 
+    .card{
+        border: 1px solid var(--color-primary);
+    }
+
     .cards-content{
         
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
            
     
+    }
+
+
+    .title{
+        font-size: 0.9rem;
+        display: none;
+    }
+
+    .subtitle{
+        font-size: 0.8rem;
     }
 }
