@@ -1,5 +1,6 @@
 .product-page{
     padding: 5% 0;
+    height: 100vh;
 }
 
 
@@ -142,10 +143,15 @@
     
     }
 
+    .info{
+        margin: 10px auto;
+    
+    }
+
 
     .title{
         font-size: 0.9rem;
-        display: none;
+        /* display: none; */
     }
 
     .subtitle{
