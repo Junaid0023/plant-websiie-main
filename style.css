@@ -241,6 +241,11 @@ nav{
     font-size: 12px;
 }
 
+.avatar{
+    position: relative;
+    display: inline-block;
+}
+
 
 
 
@@ -249,19 +254,17 @@ nav{
     color: var(--color-text);
     padding: 20px;
     position: absolute;
-    min-width: 300px;
+    /* min-width: 300px; */
     width: 320px;
     font-size: 16px;
     top: 100%;
     right: 0;
     display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     pointer-events: none;
     border-radius: 3px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     z-index: 100;
+
   
 }
 
@@ -285,6 +288,8 @@ nav{
    padding: 1rem 0;
    margin: .3rem 0;
    border-radius: .8rem;
+   cursor: pointer;
+
 }
 
 .sign-in-register a:last-child button{
