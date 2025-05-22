@@ -129,7 +129,7 @@
 }
 
 .why-us{
- height: 40vh;
+ /* height: 40vh; */
 }
 
 .us{
@@ -165,7 +165,7 @@
 
 .testimonials{
     padding: 3rem 0;
-    background-color: var(--color-text);
+    /* background-color: var(--color-text); */
    
 }
 
