@@ -47,12 +47,14 @@ function moveSlider() {
 }
 
 document.querySelector(".right-arrow").addEventListener("click", function () {
-    index = index + 1; 
+    index++;
     if (index >= totalSlides) {
-        index = 0; 
+        index = 0;
     }
     moveSlider();
 });
+
+
 
 
 document.querySelector(".left-arrow").addEventListener("click", function () {
@@ -77,3 +79,15 @@ setInterval(function () {
 const items = ['shoes', 'bags', 'phones', 'books']
 
 console.log(items[0])
+
+
+// ====================toggle favourite================
+
+const favorite = document.querySelector('.favorite');
+
+favorite.addEventListener('click', () => {
+    favorite.classList.toggle('active');
+    console.log('clicked')
+});
+
+
