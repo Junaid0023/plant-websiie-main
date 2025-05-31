@@ -1,4 +1,43 @@
-// hamburger menu
+const testimonials = [
+  {
+    image: "asserts/testimonial 1.jpeg",
+    name: "Junaid Ishaq",
+    location: "Tamale, Asawaba",
+    shortQuote: "Absolutely love my monstera!",
+    fullQuote: "It arrived fresh and healthy, and the packaging was super eco-friendly. I’ll definitely order again."
+  },
+  {
+    image: "asserts/testimonial 2.jpeg",
+    name: "Ama Serwaa",
+    location: "Kumasi, Adum",
+    shortQuote: "My snake plant is thriving!",
+    fullQuote: "I was surprised how vibrant it looked straight out of the box. Great service!"
+  },
+  {
+    image: "asserts/testimonial 3.jpeg",
+    name: "Kwame Boadu",
+    location: "Accra, East Legon",
+    shortQuote: "Super fast delivery.",
+    fullQuote: "I ordered on Monday and received it by Wednesday! The plant was healthy and beautiful."
+  },
+  {
+    image: "asserts/testimonial 4.jpeg",
+    name: "Akosua Danso",
+    location: "Cape Coast",
+    shortQuote: "Great quality plants.",
+    fullQuote: "The variety and quality were outstanding. I’ve recommended this shop to all my friends."
+  },
+  {
+    image: "asserts/testimonial 1.jpeg",
+    name: "Yaw Owusu",
+    location: "Takoradi, Anaji",
+    shortQuote: "Well-packaged and fresh.",
+    fullQuote: "You can tell a lot of care goes into each order. I’m already planning my next purchase."
+  }
+];
+
+
+
 
 const openMenu = document.querySelector('.open-menu')
 const navLinks = document.querySelector('.nav-links')
@@ -26,6 +65,7 @@ searchBtn.addEventListener('click', ()=>{
 
    
 })
+
 
 
 
@@ -76,18 +116,57 @@ setInterval(function () {
 
 
 
-const items = ['shoes', 'bags', 'phones', 'books']
 
-console.log(items[0])
 
 
 // ====================toggle favourite================
 
-const favorite = document.querySelector('.favorite');
+// const favorite = document.querySelector('.favorite');
 
-favorite.addEventListener('click', () => {
-    favorite.classList.toggle('active');
-    console.log('clicked')
-});
+// favorite.addEventListener('click', () => {
+//     favorite.classList.toggle('active');
+//     console.log('clicked')
+// });
 
 
+ document.addEventListener("DOMContentLoaded", () => {
+    const favorite = document.querySelector('.favorite');
+    if (favorite) {
+      favorite.addEventListener('click', () => {
+        favorite.classList.toggle('fa-solid'); // switch between filled and outline
+        favorite.classList.toggle('fa-regular');
+        favorite.classList.toggle('active');
+        console.log('clicked');
+      });
+    }
+  });
+
+
+// ===================TESTIMONIALS ======================>
+
+    const imageEl = document.querySelector(".image")
+    const nameEl = document.querySelector(".name")
+    const locationEl = document.querySelector(".location")
+    const shortQuoteEl = document.querySelector(".shortQuote")
+    const fullQuoteEl = document.querySelector(".fullQuote")
+
+    let currentIndex = 0
+
+    const UpdateTestimonial = () => {
+        const {image, name, location, shortQuote, fullQuote} = testimonials[currentIndex]
+        imageEl.src = image
+        nameEl.textContent = name
+        locationEl.textContent = location
+        shortQuoteEl.textContent = shortQuote
+        fullQuoteEl.textContent = fullQuote
+    }
+
+    UpdateTestimonial()
+
+    setInterval(()=> {
+          currentIndex = (currentIndex + 1) % testimonials.length;
+        UpdateTestimonial()
+    },7000)
+
+
+    //================END OF TESTIMONIALS ==================>
